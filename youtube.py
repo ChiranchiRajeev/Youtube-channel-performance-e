@@ -21,7 +21,7 @@ Welcome to your YouTube analytics hub! 🚀 Dive into clear, emoji-packed insigh
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv(r"C:\Users\pc\OneDrive\Documents\cip 2025\Data Analyst\youtube\youtube_channel_real_performance_analytics.csv")
+        df = pd.read_csv("youtube_channel_real_performance_analytics.csv")
         return df
     except FileNotFoundError:
         st.error("🚫 Error: 'youtube_data.csv' not found. Place the file in the same directory.")
